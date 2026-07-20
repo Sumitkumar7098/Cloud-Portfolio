@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumit Kumar | AWS Cloud Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Sumit Kumar, a professional AWS Cloud Engineer specializing in secure, scalable, and automated cloud architectures, VPC deployments, S3 hosting, and Linux administration.">
+  <link rel="icon" type="image/png" href="assets/avatar-profile.png">
+
+  <!-- Open Graph / Social Share -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sumitkumar.dev/">
+  <meta property="og:title" content="Sumit Kumar | AWS Cloud Engineer Portfolio">
+  <meta property="og:description" content="AWS Cloud Engineer specializing in VPC, EC2, RDS, S3 &amp; Linux. Available for new opportunities.">
+  <meta property="og:image" content="assets/hero-dashboard.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sumit Kumar | AWS Cloud Engineer">
+  <meta name="twitter:description" content="Secure cloud architectures, three-tier VPC deployments, and automated AWS infrastructure.">
+  <meta name="twitter:image" content="assets/hero-dashboard.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,800;1,600;1,800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="light-theme">
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Background Decorative Glows -->
+  <div class="glow-bg glow-bg-1"></div>
+  <div class="glow-bg glow-bg-2"></div>
+  <div class="glow-bg glow-bg-3"></div>
+
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Sumit<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certs</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="assets/resume.pdf" download="Sumit_Kumar_Resume.pdf" class="btn-resume" aria-label="Download Resume">
+          <i data-lucide="download"></i>
+          <span>Resume</span>
+        </a>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+          <i data-lucide="moon" class="icon-dark"></i>
+          <i data-lucide="sun" class="icon-light"></i>
+        </button>
+        <a href="#contact" class="btn-hire">Hire Me</a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Menu -->
+  <div class="mobile-menu">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#process" class="mobile-link">Process</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#certifications" class="mobile-link">Certifications</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="assets/resume.pdf" download="Sumit_Kumar_Resume.pdf" class="mobile-link mobile-resume-link">
+      <i data-lucide="download"></i> Download Resume
+    </a>
+    <div class="mobile-menu-footer">
+      <a href="mailto:sumitkumar10102004@gmail.com" class="mobile-social-link"><i data-lucide="mail"></i></a>
+      <a href="https://github.com/Sumitkumar7098" target="_blank" class="mobile-social-link"><i data-lucide="github"></i></a>
+      <a href="https://www.linkedin.com/in/sumit7098/" target="_blank" class="mobile-social-link"><i data-lucide="linkedin"></i></a>
+    </div>
+  </div>
+
+  <!-- Main Content Container -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero-section section-padding">
+      <!-- Particle Canvas -->
+      <canvas id="hero-particles"></canvas>
+
+      <div class="container hero-container">
+        <div class="hero-content fade-in-slide">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for new opportunities</span>
+          </div>
+          <h1 class="hero-title">
+            Hi I'm <span class="highlight grad-text">Sumit</span>
+          </h1>
+          <h2 class="hero-subtitle" id="typewriter-text"></h2>
+          <p class="hero-desc">
+            A passionate Cloud Engineer specializing in architecting secure, automated, and highly available infrastructure on Amazon Web Services (AWS). Dedicated to continuous learning and cloud automation.
+          </p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary magnetic-btn">Hire Me</a>
+            <a href="assets/resume.pdf" download="Sumit_Kumar_Resume.pdf" class="btn btn-secondary magnetic-btn">
+              <i data-lucide="download"></i> Resume
+            </a>
+          </div>
+
+          <!-- Animated Stats Row -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-target="3">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Projects Deployed</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="10">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">AWS Services</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="7">0</span><span class="stat-suffix">.6</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-visual fade-in-scale">
+          <div class="image-wrapper-glass card-tilt" id="hero-tilt-card">
+            <img src="assets/hero-dashboard.png" alt="Cloud Infrastructure Dashboard Mockup" class="hero-img">
+            <div class="glow-card-border"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left side: Description & Skill pills -->
+          <div class="about-intro fade-in-slide">
+            <span class="section-tag cursive">Hello!</span>
+            <h3 class="about-tagline">
+              Focus is on deploying secure networks, automating deployment workflows, and building reliable database layers.
+            </h3>
+            
+            <!-- Skill pills floating system -->
+            <div class="skills-cloud" id="skills-cloud">
+              <span class="skill-pill stagger-pill" style="--delay:0.05s" data-category="cloud">AWS IAM</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.10s" data-category="compute">Amazon EC2</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.15s" data-category="storage">Amazon S3</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.20s" data-category="database">Amazon RDS</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.25s" data-category="network">Amazon VPC</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.30s" data-category="cloud">Amazon SNS</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.35s" data-category="compute">Amazon Lambda</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.40s" data-category="cloud">CloudWatch</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.45s" data-category="os">Linux (Amazon Linux)</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.50s" data-category="os">Ubuntu</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.55s" data-category="database">MySQL</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.60s" data-category="network">Route Tables</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.65s" data-category="network">Security Groups</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.70s" data-category="network">Internet Gateway</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.75s" data-category="network">CIDR Subnets</span>
+              <span class="skill-pill stagger-pill" style="--delay:0.80s" data-category="tool">Git &amp; GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cloud Project Lifecycle — Interactive Cards -->
+    <section id="process" class="process-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag cursive">How I work</span>
+          <h2 class="section-title">The Cloud Project Life Cycle</h2>
+          <p class="section-subtitle">Click any stage card to explore tools &amp; actions at each phase</p>
+        </div>
+
+        <!-- 8 Interactive Lifecycle Cards -->
+        <div class="lc-cards-grid">
+
+          <!-- Stage 0 -->
+          <div class="lc-card" data-stage="0" tabindex="0">
+            <div class="lc-card-inner">
+              <div class="lc-card-front">
+                <div class="lc-stage-badge" style="--clr:#f472b6">S0</div>
+                <div class="lc-icon-wrap" style="--clr:#f472b6">
+                  <i data-lucide="target"></i>
+                </div>
+                <h3 class="lc-card-title">Strategy &amp; Planning</h3>
+                <p class="lc-card-hint">Click to explore →</p>
+              </div>
+              <div class="lc-card-back" style="--clr:#f472b6">
+                <div class="lc-back-badge">Stage 0</div>
+                <h4>Strategy &amp; Planning</h4>
+                <p>Define project goals, scope, cost estimation, compliance requirements &amp; stakeholder alignment before any cloud resource is provisioned.</p>
+                <div class="lc-back-tags">
+                  <span>Requirements</span><span>Cost Planning</span><span>Compliance</span><span>Roadmap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 1 -->
+          <div class="lc-card" data-stage="1" tabindex="0">
+            <div class="lc-card-inner">
+              <div class="lc-card-front">
+                <div class="lc-stage-badge" style="--clr:#fb923c">S1</div>
+                <div class="lc-icon-wrap" style="--clr:#fb923c">
+                  <i data-lucide="layout-dashboard"></i>
+                </div>
+                <h3 class="lc-card-title">Architecture Design</h3>
+                <p class="lc-card-hint">Click to explore →</p>
+              </div>
+              <div class="lc-card-back" style="--clr:#fb923c">
+                <div class="lc-back-badge">Stage 1</div>
+                <h4>Architecture Design</h4>
+                <p>Design VPC topology, subnet layout (public/private), multi-AZ redundancy, and select compute/database services for the workload.</p>
+                <div class="lc-back-tags">
+                  <span>VPC</span><span>Subnets</span><span>Multi-AZ</span><span>EC2</span><span>RDS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="lc-card" data-stage="2" tabindex="0">
+            <div class="lc-card-inner">
+              <div class="lc-card-front">
+                <div class="lc-stage-badge" style="--clr:#facc15">S2</div>
+                <div class="lc-icon-wrap" style="--clr:#facc15">
+                  <i data-lucide="shield-check"></i>
+                </div>
+                <h3 class="lc-card-title">Security &amp; IAM</h3>
+                <p class="lc-card-hint">Click to explore →</p>
+              </div>
+              <div class="lc-card-back" style="--clr:#facc15">
+                <div class="lc-back-badge">Stage 2</div>
+                <h4>Security &amp; IAM</h4>
+                <p>Define IAM roles, policies, Security Groups, NACLs and enforce least-privilege access for all resources and users.</p>
+                <div class="lc-back-tags">
+                  <span>IAM Roles</span><span>Security Groups</span><span>NACLs</span><span>MFA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="lc-card" data-stage="3" tabindex="0">
+            <div class="lc-card-inner">
+              <div class="lc-card-front">
+                <div class="lc-stage-badge" style="--clr:#4ade80">S3</div>
+                <div class="lc-icon-wrap" style="--clr:#4ade80">
+                  <i data-lucide="server"></i>
+                </div>
+                <h3 class="lc-card-title">Infrastructure Build</h3>
+                <p class="lc-card-hint">Click to explore →</p>
+              </div>
+              <div class="lc-card-back" style="--clr:#4ade80">
+                <div class="lc-back-badge">Stage 3</div>
+                <h4>Infrastructure Build</h4>
+                <p>Provision VPC, subnets, Internet Gateways, Route Tables, EC2 instances, RDS databases and connect all networking layers.</p>
+                <div class="lc-back-tags">
+                  <span>VPC Setup</span><span>IGW</span><span>Route Tables</span><span>EC2</span><span>RDS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 4 -->
+          <div class="lc-card" data-stage="4" tabindex="0">
+            <div class="lc-card-inner">
+              <div class="lc-card-front">
+                <div class="lc-stage-badge" style="--clr:#22d3ee">S4</div>
+                <div class="lc-icon-wrap" style="--clr:#22d3ee">
+                  <i data-lucide="settings-2"></i>
+                </div>
+                <h3 class="lc-card-title">Configuration</h3>
+                <p class="lc-card-hint">Click to explore →</p>
+              </div>
+              <div class="lc-card-back" style="--clr:#22d3ee">
+                <div class="lc-back-badge">Stage 4</div>
+                <h4>Configuration</h4>
+                <p>Install &amp; configure OS packages, Apache/Nginx web server, MySQL, SSH hardening, and environment variables on Linux servers.</p>
+                <div class="lc-back-tags">
+                  <span>Linux</span><span>Apache</span><span>MySQL</span><span>SSH</span><span>User Data</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 5 -->
+          <div class="lc-card" data-stage="5" tabindex="0">
+            <div class="lc-card-inner">
+              <div class="lc-card-front">
+                <div class="lc-stage-badge" style="--clr:#818cf8">S5</div>
+                <div class="lc-icon-wrap" style="--clr:#818cf8">
+                  <i data-lucide="flask-conical"></i>
+                </div>
+                <h3 class="lc-card-title">Testing &amp; Validation</h3>
+                <p class="lc-card-hint">Click to explore →</p>
+              </div>
+              <div class="lc-card-back" style="--clr:#818cf8">
+                <div class="lc-back-badge">Stage 5</div>
+                <h4>Testing &amp; Validation</h4>
+                <p>Validate connectivity, security group rules, DB access, load testing, failover scenarios, and CloudWatch alarm triggers.</p>
+                <div class="lc-back-tags">
+                  <span>Connectivity</span><span>Load Test</span><span>CloudWatch</span><span>Failover</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 6 -->
+          <div class="lc-card" data-stage="6" tabindex="0">
+            <div class="lc-card-inner">
+              <div class="lc-card-front">
+                <div class="lc-stage-badge" style="--clr:#a3e635">S6</div>
+                <div class="lc-icon-wrap" style="--clr:#a3e635">
+                  <i data-lucide="rocket"></i>
+                </div>
+                <h3 class="lc-card-title">Deployment</h3>
+                <p class="lc-card-hint">Click to explore →</p>
+              </div>
+              <div class="lc-card-back" style="--clr:#a3e635">
+                <div class="lc-back-badge">Stage 6</div>
+                <h4>Deployment</h4>
+                <p>Deploy application code, configure S3 static hosting or EC2 deployments, set up SNS alerts and enable auto-scaling policies.</p>
+                <div class="lc-back-tags">
+                  <span>S3 Hosting</span><span>EC2 Deploy</span><span>SNS</span><span>Auto Scaling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 7 -->
+          <div class="lc-card" data-stage="7" tabindex="0">
+            <div class="lc-card-inner">
+              <div class="lc-card-front">
+                <div class="lc-stage-badge" style="--clr:#f87171">S7</div>
+                <div class="lc-icon-wrap" style="--clr:#f87171">
+                  <i data-lucide="trending-up"></i>
+                </div>
+                <h3 class="lc-card-title">Optimize &amp; Handover</h3>
+                <p class="lc-card-hint">Click to explore →</p>
+              </div>
+              <div class="lc-card-back" style="--clr:#f87171">
+                <div class="lc-back-badge">Stage 7</div>
+                <h4>Optimize &amp; Handover</h4>
+                <p>Cost optimization via Reserved Instances, Right-sizing, CloudWatch dashboards setup, documentation &amp; knowledge transfer.</p>
+                <div class="lc-back-tags">
+                  <span>Cost Optimize</span><span>Right-sizing</span><span>Dashboard</span><span>Docs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Flow connector arrow -->
+        <div class="lc-flow-hint fade-in-slide">
+          <span>Iterative cycle — each stage feeds into the next</span>
+          <i data-lucide="repeat-2"></i>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Experience & Bio Section -->
+    <section id="experience" class="experience-section section-padding">
+      <div class="container">
+        <div class="bio-grid">
+          <!-- Bio Column -->
+          <div class="bio-details fade-in-slide">
+            <span class="section-tag cursive">Who I am</span>
+            <div class="bio-profile-header">
+              <div class="bio-avatar">
+                <img src="assets/avatar-profile.png" alt="Sumit Kumar Profile Picture">
+              </div>
+              <div>
+                <h3 class="bio-name">Sumit Kumar</h3>
+                <p class="bio-role">AWS Cloud Engineer</p>
+              </div>
+            </div>
+            
+            <p class="bio-text">
+              I am a Cloud Engineer with hands-on practice building reliable cloud ecosystems. I combine technical problem-solving with a continuous learning mindset to implement secure three-tier infrastructures and automated web deployments.
+            </p>
+            
+            <div class="bio-meta-info">
+              <div class="meta-item">
+                <span class="meta-label">Education:</span>
+                <span class="meta-value">B.Tech in Computer Science & Engineering</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Graduation Year:</span>
+                <span class="meta-value">2022 - 2026</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">CGPA:</span>
+                <span class="meta-value">7.6 / 10.0</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Location:</span>
+                <span class="meta-value">Punjab, India</span>
+              </div>
+            </div>
+
+            <div class="bio-socials">
+              <a href="https://www.linkedin.com/in/sumit7098/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+              <a href="https://github.com/Sumitkumar7098" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+              <a href="mailto:sumitkumar10102004@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+          </div>
+
+          <!-- Experience Timeline Column -->
+          <div class="timeline-column fade-in-slide">
+            <span class="section-tag cursive">Timeline</span>
+            <h3 class="timeline-title">Education & Training</h3>
+            
+            <div class="timeline">
+              <!-- Timeline Item 1 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022 - 2026</div>
+                <h4 class="timeline-heading">B.Tech - Computer Science & Engineering</h4>
+                <p class="timeline-sub">IK Gujral Punjab Technical University</p>
+                <p class="timeline-text">
+                  Acquired core concepts in Computer Science, databases, networking, system design, and software engineering. Graduated with a CGPA of 7.6.
+                </p>
+              </div>
+
+              <!-- Timeline Item 2 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Training & Practice</div>
+                <h4 class="timeline-heading">AWS Cloud Computing Self-Learning</h4>
+                <p class="timeline-sub">Hands-on Practice & Infrastructure Lab work</p>
+                <ul class="timeline-bullets">
+                  <li>Built secure multi-tier virtual networks using VPC public/private subnets.</li>
+                  <li>Provisioned compute instances (EC2) and database servers (RDS) with access control configurations.</li>
+                  <li>Configured Linux servers and administered operations via secure SSH tunnels.</li>
+                  <li>Deployed web applications utilizing custom S3 storage rules.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certs-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag cursive">Credentials</span>
+          <h2 class="section-title">Certifications &amp; Courses</h2>
+        </div>
+
+        <div class="certs-grid">
+
+          <!-- Cert 1 -->
+          <div class="cert-card fade-in-scale">
+            <div class="cert-icon-wrap cert-aws">
+              <i data-lucide="cloud"></i>
+            </div>
+            <div class="cert-body">
+              <div class="cert-status cert-status--progress">In Progress</div>
+              <h3 class="cert-title">AWS Certified Cloud Practitioner</h3>
+              <p class="cert-issuer">Amazon Web Services (AWS)</p>
+              <p class="cert-desc">Foundational AWS certification covering cloud concepts, core services, security, architecture, pricing, and support. Actively preparing for CLF-C02 exam.</p>
+              <div class="cert-footer">
+                <span class="cert-date"><i data-lucide="calendar"></i> Target: 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card fade-in-scale">
+            <div class="cert-icon-wrap cert-linux">
+              <i data-lucide="terminal"></i>
+            </div>
+            <div class="cert-body">
+              <div class="cert-status cert-status--done">Completed</div>
+              <h3 class="cert-title">AWS Cloud Technical Essentials</h3>
+              <p class="cert-issuer">Amazon Web Services — Coursera</p>
+              <p class="cert-desc">Hands-on course covering EC2, S3, RDS, IAM, VPC, Lambda, and CloudWatch with real-world lab exercises on the AWS Management Console.</p>
+              <div class="cert-footer">
+                <span class="cert-date"><i data-lucide="calendar"></i> 2024</span>
+                <a href="#" class="cert-verify-link" target="_blank" rel="noopener"><i data-lucide="external-link"></i> Verify</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card fade-in-scale">
+            <div class="cert-icon-wrap cert-linux">
+              <i data-lucide="monitor"></i>
+            </div>
+            <div class="cert-body">
+              <div class="cert-status cert-status--done">Completed</div>
+              <h3 class="cert-title">Linux for System Administrators</h3>
+              <p class="cert-issuer">Self-Learning &amp; Lab Practice</p>
+              <p class="cert-desc">Mastered Linux CLI, file permissions, user management, process control, SSH configuration, Apache server setup, and shell scripting on Amazon Linux &amp; Ubuntu.</p>
+              <div class="cert-footer">
+                <span class="cert-date"><i data-lucide="calendar"></i> 2023 – 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card fade-in-scale">
+            <div class="cert-icon-wrap cert-git">
+              <i data-lucide="git-branch"></i>
+            </div>
+            <div class="cert-body">
+              <div class="cert-status cert-status--done">Completed</div>
+              <h3 class="cert-title">Git &amp; GitHub — Version Control</h3>
+              <p class="cert-issuer">Self-Learning &amp; Project Practice</p>
+              <p class="cert-desc">Proficient in Git workflows — branching, merging, pull requests, resolving conflicts, and maintaining clean commit history for cloud infrastructure projects.</p>
+              <div class="cert-footer">
+                <span class="cert-date"><i data-lucide="calendar"></i> 2023</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Works Section -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag cursive">Selected Works</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card fade-in-scale" onclick="openProjectModal('threetier')">
+            <div class="project-img-container">
+              <img src="assets/architecture-diagram.png" alt="AWS Three-Tier Architecture Deployment Graphic">
+              <div class="project-overlay">
+                <span class="project-view-btn">View Details <i data-lucide="external-link"></i></span>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">AWS Three-Tier Architecture Deployment</h3>
+              <p class="project-desc">
+                Designed and deployed a secure, production-ready three-tier architecture utilizing custom public/private subnets, application compute, and isolated RDS database layers.
+              </p>
+              <div class="project-tags">
+                <span>VPC</span>
+                <span>EC2</span>
+                <span>RDS</span>
+                <span>Linux</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card fade-in-scale" onclick="openProjectModal('staticwebsite')">
+            <div class="project-img-container">
+              <img src="assets/website-mockup.png" alt="Static Website Hosting on AWS Mockup">
+              <div class="project-overlay">
+                <span class="project-view-btn">View Details <i data-lucide="external-link"></i></span>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Static Website Hosting on AWS S3</h3>
+              <p class="project-desc">
+                Designed and deployed a static website on Amazon S3 using AWS Static Website Hosting. Configured secure access management and S3 Bucket Policies following security best practices.
+              </p>
+              <div class="project-tags">
+                <span>S3</span>
+                <span>IAM</span>
+                <span>Bucket Policy</span>
+                <span>Storage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left Column: Scrabble Tiles styling -->
+          <div class="contact-branding fade-in-slide">
+            <div class="scrabble-board">
+              <div class="scrabble-row">
+                <div class="scrabble-tile">C<span class="scrabble-score">3</span></div>
+                <div class="scrabble-tile">O<span class="scrabble-score">1</span></div>
+                <div class="scrabble-tile">N<span class="scrabble-score">1</span></div>
+                <div class="scrabble-tile">T<span class="scrabble-score">1</span></div>
+                <div class="scrabble-tile">A<span class="scrabble-score">1</span></div>
+                <div class="scrabble-tile">C<span class="scrabble-score">3</span></div>
+                <div class="scrabble-tile">T<span class="scrabble-score">1</span></div>
+              </div>
+              <div class="scrabble-row offset">
+                <div class="scrabble-tile">U<span class="scrabble-score">1</span></div>
+                <div class="scrabble-tile">S<span class="scrabble-score">1</span></div>
+              </div>
+            </div>
+            
+            <div class="contact-brief">
+              <p>Have a question or looking to build cloud infrastructure together?</p>
+              <p class="contact-email"><i data-lucide="mail"></i> <a href="mailto:sumitkumar10102004@gmail.com">sumitkumar10102004@gmail.com</a></p>
+              <p class="contact-phone"><i data-lucide="phone"></i> +91 7091313798</p>
+              <p class="contact-linkedin"><i data-lucide="linkedin"></i> <a href="https://www.linkedin.com/in/sumit7098/" target="_blank">linkedin.com/in/sumit7098</a></p>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Form -->
+          <div class="contact-form-wrapper fade-in-slide">
+            <!-- ⚠️ Replace YOUR_FORM_ID with your Formspree endpoint ID from formspree.io -->
+            <form id="contact-form" class="glass-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="form-group">
+                <input type="text" id="name" name="name" required placeholder=" ">
+                <label for="name">Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder=" ">
+                <label for="email">Email</label>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                <label for="message">Message</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <i data-lucide="send"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner section-padding">
+      <div class="container">
+        <div class="cta-wrapper glassmorphism fade-in-scale">
+          <h2 class="cta-title">Let's Make It Happen</h2>
+          <p class="cta-desc">Always open to new opportunities, collaboration, and learning projects. Let's build together to deploy your system to the cloud!</p>
+          <a href="mailto:sumitkumar10102004@gmail.com" class="btn btn-dark">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">Sumit<span>.</span></div>
+      <div class="footer-social-links">
+        <a href="https://www.linkedin.com/in/sumit7098/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social-link">
+          <i data-lucide="linkedin"></i>
+        </a>
+        <a href="https://github.com/Sumitkumar7098" target="_blank" rel="noopener" aria-label="GitHub" class="footer-social-link">
+          <i data-lucide="github"></i>
+        </a>
+        <a href="mailto:sumitkumar10102004@gmail.com" aria-label="Email" class="footer-social-link">
+          <i data-lucide="mail"></i>
+        </a>
+        <a href="assets/resume.pdf" download="Sumit_Kumar_Resume.pdf" aria-label="Download Resume" class="footer-social-link">
+          <i data-lucide="file-down"></i>
+        </a>
+      </div>
+      <div class="footer-copyright">
+        &copy; <span id="current-year">2026</span> Sumit Kumar. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button id="scroll-to-top" aria-label="Scroll to top" title="Scroll to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- Project Details Modals -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-content glassmorphism">
+      <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+      
+      <!-- Modal Content Placeholder -->
+      <div id="modal-project-details">
+        <!-- Will be loaded dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
