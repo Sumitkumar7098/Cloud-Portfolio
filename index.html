@@ -3,539 +3,504 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sumit Kumar | AWS Cloud Engineer Portfolio</title>
-  <meta name="description" content="Portfolio of Sumit Kumar, a professional AWS Cloud Engineer specializing in secure, scalable, and automated cloud architectures, VPC deployments, S3 hosting, and Linux administration.">
+  <title>Sumit Kumar | IT Support Engineer | Desktop Support | Active Directory | Microsoft 365</title>
+  <meta name="description" content="Sumit Kumar — IT Support Engineer specializing in Desktop Support, Active Directory, Microsoft 365, Networking, Windows Administration, and CCTV/NVR/DVR systems. B.Tech CS Graduate.">
+  <meta name="keywords" content="IT Support Engineer, Desktop Support Engineer, Active Directory, Microsoft 365, Windows Administration, Networking, Outlook, CCTV, NVR, DVR, Sumit Kumar">
+  <meta name="author" content="Sumit Kumar">
   <link rel="icon" type="image/png" href="assets/avatar-profile.png">
 
-  <!-- Open Graph / Social Share -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sumitkumar.dev/">
-  <meta property="og:title" content="Sumit Kumar | AWS Cloud Engineer Portfolio">
-  <meta property="og:description" content="AWS Cloud Engineer specializing in VPC, EC2, RDS, S3 &amp; Linux. Available for new opportunities.">
-  <meta property="og:image" content="assets/hero-dashboard.png">
+  <meta property="og:url" content="https://sumitkumar7098.github.io/">
+  <meta property="og:title" content="Sumit Kumar | IT Support Engineer">
+  <meta property="og:description" content="B.Tech CS Graduate — Desktop Support, Active Directory, Microsoft 365, Networking, CCTV.">
+  <meta property="og:image" content="assets/avatar-profile.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sumit Kumar | AWS Cloud Engineer">
-  <meta name="twitter:description" content="Secure cloud architectures, three-tier VPC deployments, and automated AWS infrastructure.">
-  <meta name="twitter:image" content="assets/hero-dashboard.png">
-  
+  <meta name="twitter:title" content="Sumit Kumar | IT Support Engineer">
+  <meta name="twitter:description" content="Desktop Support | Active Directory | Microsoft 365 | Networking">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,800;1,600;1,800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body class="light-theme">
 
-  <!-- Scroll Progress Bar -->
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div id="loading-screen">
+    <div class="loader-content">
+      <div class="loader-logo">SK</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p class="loader-text">Initializing System...</p>
+    </div>
+  </div>
+
+  <!-- ===================== SCROLL PROGRESS ===================== -->
   <div id="scroll-progress"></div>
 
-  <!-- Custom Cursor -->
+  <!-- ===================== CUSTOM CURSOR ===================== -->
   <div id="cursor-dot"></div>
   <div id="cursor-ring"></div>
 
-  <!-- Background Decorative Glows -->
-  <div class="glow-bg glow-bg-1"></div>
-  <div class="glow-bg glow-bg-2"></div>
-  <div class="glow-bg glow-bg-3"></div>
-
-  <!-- Navigation Header -->
-  <header class="navbar">
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#home" class="logo">Sumit<span>.</span></a>
-      <nav class="nav-links">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#process">Process</a>
-        <a href="#experience">Experience</a>
-        <a href="#certifications">Certs</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      <a href="#home" class="logo">Sumit<span class="logo-dot">.</span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certs</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#tools" class="nav-link">Tools</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
       <div class="nav-actions">
-        <a href="assets/resume.pdf" download="Sumit_Kumar_Resume.pdf" class="btn-resume" aria-label="Download Resume">
-          <i data-lucide="download"></i>
+        <a href="assets/resume.pdf" download="Sumit_Kumar_IT_Support_Resume.pdf" class="btn-resume" aria-label="Download Resume">
+          <i data-lucide="download" class="btn-icon"></i>
           <span>Resume</span>
         </a>
         <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
-          <i data-lucide="moon" class="icon-dark"></i>
-          <i data-lucide="sun" class="icon-light"></i>
+          <i data-lucide="moon" class="icon-moon"></i>
+          <i data-lucide="sun" class="icon-sun"></i>
         </button>
-        <a href="#contact" class="btn-hire">Hire Me</a>
       </div>
-      <button class="menu-toggle" aria-label="Toggle Menu">
-        <i data-lucide="menu"></i>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        <i data-lucide="menu" class="icon-menu"></i>
+        <i data-lucide="x" class="icon-close"></i>
       </button>
     </div>
   </header>
 
-  <!-- Mobile Navigation Menu -->
-  <div class="mobile-menu">
+  <!-- ===================== MOBILE MENU ===================== -->
+  <div class="mobile-menu" id="mobile-menu">
     <a href="#home" class="mobile-link">Home</a>
     <a href="#about" class="mobile-link">About</a>
-    <a href="#process" class="mobile-link">Process</a>
+    <a href="#skills" class="mobile-link">Skills</a>
     <a href="#experience" class="mobile-link">Experience</a>
-    <a href="#certifications" class="mobile-link">Certifications</a>
     <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#certifications" class="mobile-link">Certifications</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#tools" class="mobile-link">Tools</a>
     <a href="#contact" class="mobile-link">Contact</a>
-    <a href="assets/resume.pdf" download="Sumit_Kumar_Resume.pdf" class="mobile-link mobile-resume-link">
+    <a href="assets/resume.pdf" download="Sumit_Kumar_IT_Support_Resume.pdf" class="mobile-link mobile-resume">
       <i data-lucide="download"></i> Download Resume
     </a>
-    <div class="mobile-menu-footer">
-      <a href="mailto:sumitkumar10102004@gmail.com" class="mobile-social-link"><i data-lucide="mail"></i></a>
-      <a href="https://github.com/Sumitkumar7098" target="_blank" class="mobile-social-link"><i data-lucide="github"></i></a>
-      <a href="https://www.linkedin.com/in/sumit7098/" target="_blank" class="mobile-social-link"><i data-lucide="linkedin"></i></a>
+    <div class="mobile-socials">
+      <a href="mailto:sumitkumar10102004@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      <a href="https://linkedin.com/in/sumit7098" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      <a href="https://github.com/Sumitkumar7098" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
     </div>
   </div>
 
-  <!-- Main Content Container -->
   <main>
-    
-    <!-- Hero Section -->
-    <section id="home" class="hero-section section-padding">
-      <!-- Particle Canvas -->
-      <canvas id="hero-particles"></canvas>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="home" class="hero-section">
+      <!-- Particle canvas -->
+      <canvas id="particle-canvas"></canvas>
+
+      <!-- Floating tech icons background -->
+      <div class="tech-float-bg">
+        <span class="float-icon fi-1">🖥️</span>
+        <span class="float-icon fi-2">🌐</span>
+        <span class="float-icon fi-3">🔧</span>
+        <span class="float-icon fi-4">📡</span>
+        <span class="float-icon fi-5">💻</span>
+        <span class="float-icon fi-6">🔒</span>
+        <span class="float-icon fi-7">📊</span>
+        <span class="float-icon fi-8">⚙️</span>
+        <span class="float-icon fi-9">🖨️</span>
+      </div>
 
       <div class="container hero-container">
-        <div class="hero-content fade-in-slide">
-          <div class="status-pill">
+        <div class="hero-content">
+          <div class="status-badge">
             <span class="pulse-dot"></span>
             <span>Available for new opportunities</span>
           </div>
-          <h1 class="hero-title">
-            Hi I'm <span class="highlight grad-text">Sumit</span>
+
+          <h1 class="hero-name">
+            Hi, I'm <span class="grad-text">Sumit Kumar</span>
           </h1>
-          <h2 class="hero-subtitle" id="typewriter-text"></h2>
-          <p class="hero-desc">
-            A passionate Cloud Engineer specializing in architecting secure, automated, and highly available infrastructure on Amazon Web Services (AWS). Dedicated to continuous learning and cloud automation.
+
+          <h2 class="hero-role">
+            <span id="typed-text"></span>
+          </h2>
+
+          <p class="hero-tagline">
+            Providing reliable IT infrastructure, desktop support, Active Directory administration,
+            Microsoft 365 support, networking, and enterprise technical solutions for organizations
+            of all sizes.
           </p>
+
           <div class="hero-ctas">
-            <a href="#contact" class="btn btn-primary magnetic-btn">Hire Me</a>
-            <a href="assets/resume.pdf" download="Sumit_Kumar_Resume.pdf" class="btn btn-secondary magnetic-btn">
-              <i data-lucide="download"></i> Resume
+            <a href="assets/resume.pdf" download="Sumit_Kumar_IT_Support_Resume.pdf" class="btn btn-primary" id="hero-download-btn">
+              <i data-lucide="download"></i>
+              <span>Download Resume</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i data-lucide="send"></i>
+              <span>Contact Me</span>
             </a>
           </div>
 
-          <!-- Animated Stats Row -->
+          <!-- Stats -->
           <div class="hero-stats">
             <div class="stat-item">
-              <span class="stat-num" data-target="3">0</span><span class="stat-suffix">+</span>
-              <span class="stat-label">Projects Deployed</span>
+              <span class="stat-num" data-target="2">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Companies Served</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-              <span class="stat-num" data-target="10">0</span><span class="stat-suffix">+</span>
-              <span class="stat-label">AWS Services</span>
+              <span class="stat-num" data-target="5">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Lab Projects</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-              <span class="stat-num" data-target="7">0</span><span class="stat-suffix">.6</span>
-              <span class="stat-label">CGPA</span>
+              <span class="stat-num" data-target="6">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="30">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">IT Skills</span>
             </div>
           </div>
         </div>
-        
-        <div class="hero-visual fade-in-scale">
-          <div class="image-wrapper-glass card-tilt" id="hero-tilt-card">
-            <img src="assets/hero-dashboard.png" alt="Cloud Infrastructure Dashboard Mockup" class="hero-img">
-            <div class="glow-card-border"></div>
+
+        <div class="hero-visual">
+          <div class="hero-avatar-ring">
+            <img src="assets/avatar-profile.png" alt="Sumit Kumar — IT Support Engineer" class="hero-avatar" loading="eager">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+          </div>
+
+          <!-- Floating info cards -->
+          <div class="float-card fc-top-left">
+            <i data-lucide="monitor-check"></i>
+            <span>Desktop Support</span>
+          </div>
+          <div class="float-card fc-top-right">
+            <i data-lucide="network"></i>
+            <span>Networking</span>
+          </div>
+          <div class="float-card fc-bottom-left">
+            <i data-lucide="shield-check"></i>
+            <span>Active Directory</span>
+          </div>
+          <div class="float-card fc-bottom-right">
+            <i data-lucide="cloud"></i>
+            <span>Microsoft 365</span>
           </div>
         </div>
       </div>
+
+      <!-- Scroll down indicator -->
+      <div class="scroll-indicator">
+        <span>Scroll Down</span>
+        <div class="scroll-arrow"></div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section section-padding">
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section id="about" class="section-padding">
       <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Professional <span class="grad-text">IT Support Engineer</span></h2>
+          <p class="section-subtitle">Passionate about delivering reliable enterprise IT solutions</p>
+        </div>
+
         <div class="about-grid">
-          <!-- Left side: Description & Skill pills -->
-          <div class="about-intro fade-in-slide">
-            <span class="section-tag cursive">Hello!</span>
-            <h3 class="about-tagline">
-              Focus is on deploying secure networks, automating deployment workflows, and building reliable database layers.
-            </h3>
-            
-            <!-- Skill pills floating system -->
-            <div class="skills-cloud" id="skills-cloud">
-              <span class="skill-pill stagger-pill" style="--delay:0.05s" data-category="cloud">AWS IAM</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.10s" data-category="compute">Amazon EC2</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.15s" data-category="storage">Amazon S3</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.20s" data-category="database">Amazon RDS</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.25s" data-category="network">Amazon VPC</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.30s" data-category="cloud">Amazon SNS</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.35s" data-category="compute">Amazon Lambda</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.40s" data-category="cloud">CloudWatch</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.45s" data-category="os">Linux (Amazon Linux)</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.50s" data-category="os">Ubuntu</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.55s" data-category="database">MySQL</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.60s" data-category="network">Route Tables</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.65s" data-category="network">Security Groups</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.70s" data-category="network">Internet Gateway</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.75s" data-category="network">CIDR Subnets</span>
-              <span class="skill-pill stagger-pill" style="--delay:0.80s" data-category="tool">Git &amp; GitHub</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Cloud Project Lifecycle — Interactive Cards -->
-    <section id="process" class="process-section section-padding">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag cursive">How I work</span>
-          <h2 class="section-title">The Cloud Project Life Cycle</h2>
-          <p class="section-subtitle">Click any stage card to explore tools &amp; actions at each phase</p>
-        </div>
-
-        <!-- 8 Interactive Lifecycle Cards -->
-        <div class="lc-cards-grid">
-
-          <!-- Stage 0 -->
-          <div class="lc-card" data-stage="0" tabindex="0">
-            <div class="lc-card-inner">
-              <div class="lc-card-front">
-                <div class="lc-stage-badge" style="--clr:#f472b6">S0</div>
-                <div class="lc-icon-wrap" style="--clr:#f472b6">
-                  <i data-lucide="target"></i>
-                </div>
-                <h3 class="lc-card-title">Strategy &amp; Planning</h3>
-                <p class="lc-card-hint">Click to explore →</p>
+          <div class="about-image-col" data-aos="fade-right" data-aos-delay="100">
+            <div class="about-img-wrapper">
+              <img src="assets/avatar-profile.png" alt="Sumit Kumar" class="about-img">
+              <div class="about-img-badge">
+                <i data-lucide="award"></i>
+                <span>B.Tech<br>CS Graduate</span>
               </div>
-              <div class="lc-card-back" style="--clr:#f472b6">
-                <div class="lc-back-badge">Stage 0</div>
-                <h4>Strategy &amp; Planning</h4>
-                <p>Define project goals, scope, cost estimation, compliance requirements &amp; stakeholder alignment before any cloud resource is provisioned.</p>
-                <div class="lc-back-tags">
-                  <span>Requirements</span><span>Cost Planning</span><span>Compliance</span><span>Roadmap</span>
-                </div>
-              </div>
+              <div class="about-img-glow"></div>
             </div>
           </div>
 
-          <!-- Stage 1 -->
-          <div class="lc-card" data-stage="1" tabindex="0">
-            <div class="lc-card-inner">
-              <div class="lc-card-front">
-                <div class="lc-stage-badge" style="--clr:#fb923c">S1</div>
-                <div class="lc-icon-wrap" style="--clr:#fb923c">
-                  <i data-lucide="layout-dashboard"></i>
-                </div>
-                <h3 class="lc-card-title">Architecture Design</h3>
-                <p class="lc-card-hint">Click to explore →</p>
-              </div>
-              <div class="lc-card-back" style="--clr:#fb923c">
-                <div class="lc-back-badge">Stage 1</div>
-                <h4>Architecture Design</h4>
-                <p>Design VPC topology, subnet layout (public/private), multi-AZ redundancy, and select compute/database services for the workload.</p>
-                <div class="lc-back-tags">
-                  <span>VPC</span><span>Subnets</span><span>Multi-AZ</span><span>EC2</span><span>RDS</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Stage 2 -->
-          <div class="lc-card" data-stage="2" tabindex="0">
-            <div class="lc-card-inner">
-              <div class="lc-card-front">
-                <div class="lc-stage-badge" style="--clr:#facc15">S2</div>
-                <div class="lc-icon-wrap" style="--clr:#facc15">
-                  <i data-lucide="shield-check"></i>
-                </div>
-                <h3 class="lc-card-title">Security &amp; IAM</h3>
-                <p class="lc-card-hint">Click to explore →</p>
-              </div>
-              <div class="lc-card-back" style="--clr:#facc15">
-                <div class="lc-back-badge">Stage 2</div>
-                <h4>Security &amp; IAM</h4>
-                <p>Define IAM roles, policies, Security Groups, NACLs and enforce least-privilege access for all resources and users.</p>
-                <div class="lc-back-tags">
-                  <span>IAM Roles</span><span>Security Groups</span><span>NACLs</span><span>MFA</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Stage 3 -->
-          <div class="lc-card" data-stage="3" tabindex="0">
-            <div class="lc-card-inner">
-              <div class="lc-card-front">
-                <div class="lc-stage-badge" style="--clr:#4ade80">S3</div>
-                <div class="lc-icon-wrap" style="--clr:#4ade80">
-                  <i data-lucide="server"></i>
-                </div>
-                <h3 class="lc-card-title">Infrastructure Build</h3>
-                <p class="lc-card-hint">Click to explore →</p>
-              </div>
-              <div class="lc-card-back" style="--clr:#4ade80">
-                <div class="lc-back-badge">Stage 3</div>
-                <h4>Infrastructure Build</h4>
-                <p>Provision VPC, subnets, Internet Gateways, Route Tables, EC2 instances, RDS databases and connect all networking layers.</p>
-                <div class="lc-back-tags">
-                  <span>VPC Setup</span><span>IGW</span><span>Route Tables</span><span>EC2</span><span>RDS</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Stage 4 -->
-          <div class="lc-card" data-stage="4" tabindex="0">
-            <div class="lc-card-inner">
-              <div class="lc-card-front">
-                <div class="lc-stage-badge" style="--clr:#22d3ee">S4</div>
-                <div class="lc-icon-wrap" style="--clr:#22d3ee">
-                  <i data-lucide="settings-2"></i>
-                </div>
-                <h3 class="lc-card-title">Configuration</h3>
-                <p class="lc-card-hint">Click to explore →</p>
-              </div>
-              <div class="lc-card-back" style="--clr:#22d3ee">
-                <div class="lc-back-badge">Stage 4</div>
-                <h4>Configuration</h4>
-                <p>Install &amp; configure OS packages, Apache/Nginx web server, MySQL, SSH hardening, and environment variables on Linux servers.</p>
-                <div class="lc-back-tags">
-                  <span>Linux</span><span>Apache</span><span>MySQL</span><span>SSH</span><span>User Data</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Stage 5 -->
-          <div class="lc-card" data-stage="5" tabindex="0">
-            <div class="lc-card-inner">
-              <div class="lc-card-front">
-                <div class="lc-stage-badge" style="--clr:#818cf8">S5</div>
-                <div class="lc-icon-wrap" style="--clr:#818cf8">
-                  <i data-lucide="flask-conical"></i>
-                </div>
-                <h3 class="lc-card-title">Testing &amp; Validation</h3>
-                <p class="lc-card-hint">Click to explore →</p>
-              </div>
-              <div class="lc-card-back" style="--clr:#818cf8">
-                <div class="lc-back-badge">Stage 5</div>
-                <h4>Testing &amp; Validation</h4>
-                <p>Validate connectivity, security group rules, DB access, load testing, failover scenarios, and CloudWatch alarm triggers.</p>
-                <div class="lc-back-tags">
-                  <span>Connectivity</span><span>Load Test</span><span>CloudWatch</span><span>Failover</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Stage 6 -->
-          <div class="lc-card" data-stage="6" tabindex="0">
-            <div class="lc-card-inner">
-              <div class="lc-card-front">
-                <div class="lc-stage-badge" style="--clr:#a3e635">S6</div>
-                <div class="lc-icon-wrap" style="--clr:#a3e635">
-                  <i data-lucide="rocket"></i>
-                </div>
-                <h3 class="lc-card-title">Deployment</h3>
-                <p class="lc-card-hint">Click to explore →</p>
-              </div>
-              <div class="lc-card-back" style="--clr:#a3e635">
-                <div class="lc-back-badge">Stage 6</div>
-                <h4>Deployment</h4>
-                <p>Deploy application code, configure S3 static hosting or EC2 deployments, set up SNS alerts and enable auto-scaling policies.</p>
-                <div class="lc-back-tags">
-                  <span>S3 Hosting</span><span>EC2 Deploy</span><span>SNS</span><span>Auto Scaling</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Stage 7 -->
-          <div class="lc-card" data-stage="7" tabindex="0">
-            <div class="lc-card-inner">
-              <div class="lc-card-front">
-                <div class="lc-stage-badge" style="--clr:#f87171">S7</div>
-                <div class="lc-icon-wrap" style="--clr:#f87171">
-                  <i data-lucide="trending-up"></i>
-                </div>
-                <h3 class="lc-card-title">Optimize &amp; Handover</h3>
-                <p class="lc-card-hint">Click to explore →</p>
-              </div>
-              <div class="lc-card-back" style="--clr:#f87171">
-                <div class="lc-back-badge">Stage 7</div>
-                <h4>Optimize &amp; Handover</h4>
-                <p>Cost optimization via Reserved Instances, Right-sizing, CloudWatch dashboards setup, documentation &amp; knowledge transfer.</p>
-                <div class="lc-back-tags">
-                  <span>Cost Optimize</span><span>Right-sizing</span><span>Dashboard</span><span>Docs</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <!-- Flow connector arrow -->
-        <div class="lc-flow-hint fade-in-slide">
-          <span>Iterative cycle — each stage feeds into the next</span>
-          <i data-lucide="repeat-2"></i>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- Experience & Bio Section -->
-    <section id="experience" class="experience-section section-padding">
-      <div class="container">
-        <div class="bio-grid">
-          <!-- Bio Column -->
-          <div class="bio-details fade-in-slide">
-            <span class="section-tag cursive">Who I am</span>
-            <div class="bio-profile-header">
-              <div class="bio-avatar">
-                <img src="assets/avatar-profile.png" alt="Sumit Kumar Profile Picture">
-              </div>
-              <div>
-                <h3 class="bio-name">Sumit Kumar</h3>
-                <p class="bio-role">AWS Cloud Engineer</p>
-              </div>
-            </div>
-            
-            <p class="bio-text">
-              I am a Cloud Engineer with hands-on practice building reliable cloud ecosystems. I combine technical problem-solving with a continuous learning mindset to implement secure three-tier infrastructures and automated web deployments.
+          <div class="about-text-col" data-aos="fade-left" data-aos-delay="200">
+            <p class="about-bio">
+              I'm a <strong>B.Tech Computer Science graduate</strong> with hands-on experience in
+              enterprise IT support environments. My expertise spans <strong>Desktop Support</strong>,
+              <strong>Active Directory</strong> administration, <strong>Microsoft 365</strong> management,
+              <strong>Windows Server</strong> administration, <strong>Networking</strong> (TCP/IP, DNS, DHCP),
+              <strong>Outlook</strong> configuration, and <strong>NVR/DVR/CCTV</strong> systems.
             </p>
-            
-            <div class="bio-meta-info">
-              <div class="meta-item">
-                <span class="meta-label">Education:</span>
-                <span class="meta-value">B.Tech in Computer Science & Engineering</span>
+            <p class="about-bio">
+              With professional experience at <strong>Kalyani Cast Tech (KCT)</strong> and
+              <strong>S. Mohanlal Cargo Containers (SMC)</strong>, I have delivered end-to-end IT
+              infrastructure support — from user management and domain administration to hardware
+              troubleshooting, printer configuration, and CCTV surveillance systems.
+            </p>
+            <p class="about-bio">
+              I am passionate about <strong>troubleshooting enterprise IT infrastructure</strong> and
+              delivering excellent end-user support with minimal downtime. I thrive in fast-paced IT
+              environments and am always eager to learn new technologies and expand my skill set.
+            </p>
+
+            <div class="about-info-cards">
+              <div class="info-card">
+                <i data-lucide="mail"></i>
+                <div>
+                  <span class="info-label">Email</span>
+                  <a href="mailto:sumitkumar10102004@gmail.com" class="info-value">sumitkumar10102004@gmail.com</a>
+                </div>
               </div>
-              <div class="meta-item">
-                <span class="meta-label">Graduation Year:</span>
-                <span class="meta-value">2022 - 2026</span>
+              <div class="info-card">
+                <i data-lucide="map-pin"></i>
+                <div>
+                  <span class="info-label">Location</span>
+                  <span class="info-value">India</span>
+                </div>
               </div>
-              <div class="meta-item">
-                <span class="meta-label">CGPA:</span>
-                <span class="meta-value">7.6 / 10.0</span>
+              <div class="info-card">
+                <i data-lucide="briefcase"></i>
+                <div>
+                  <span class="info-label">Availability</span>
+                  <span class="info-value available">Open to Work</span>
+                </div>
               </div>
-              <div class="meta-item">
-                <span class="meta-label">Location:</span>
-                <span class="meta-value">Punjab, India</span>
+              <div class="info-card">
+                <i data-lucide="graduation-cap"></i>
+                <div>
+                  <span class="info-label">Education</span>
+                  <span class="info-value">B.Tech — Computer Science</span>
+                </div>
               </div>
             </div>
 
-            <div class="bio-socials">
-              <a href="https://www.linkedin.com/in/sumit7098/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-              <a href="https://github.com/Sumitkumar7098" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
-              <a href="mailto:sumitkumar10102004@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
-            </div>
-          </div>
-
-          <!-- Experience Timeline Column -->
-          <div class="timeline-column fade-in-slide">
-            <span class="section-tag cursive">Timeline</span>
-            <h3 class="timeline-title">Education & Training</h3>
-            
-            <div class="timeline">
-              <!-- Timeline Item 1 -->
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2022 - 2026</div>
-                <h4 class="timeline-heading">B.Tech - Computer Science & Engineering</h4>
-                <p class="timeline-sub">IK Gujral Punjab Technical University</p>
-                <p class="timeline-text">
-                  Acquired core concepts in Computer Science, databases, networking, system design, and software engineering. Graduated with a CGPA of 7.6.
-                </p>
-              </div>
-
-              <!-- Timeline Item 2 -->
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Training & Practice</div>
-                <h4 class="timeline-heading">AWS Cloud Computing Self-Learning</h4>
-                <p class="timeline-sub">Hands-on Practice & Infrastructure Lab work</p>
-                <ul class="timeline-bullets">
-                  <li>Built secure multi-tier virtual networks using VPC public/private subnets.</li>
-                  <li>Provisioned compute instances (EC2) and database servers (RDS) with access control configurations.</li>
-                  <li>Configured Linux servers and administered operations via secure SSH tunnels.</li>
-                  <li>Deployed web applications utilizing custom S3 storage rules.</li>
-                </ul>
-              </div>
+            <div class="about-actions">
+              <a href="assets/resume.pdf" download="Sumit_Kumar_IT_Support_Resume.pdf" class="btn btn-primary">
+                <i data-lucide="download"></i> Download Resume
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <i data-lucide="send"></i> Hire Me
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="certs-section section-padding">
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section id="skills" class="section-padding section-alt">
       <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag cursive">Credentials</span>
-          <h2 class="section-title">Certifications &amp; Courses</h2>
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Technical Skills</span>
+          <h2 class="section-title">My <span class="grad-text">Expertise</span></h2>
+          <p class="section-subtitle">Comprehensive IT skills across enterprise systems and infrastructure</p>
         </div>
 
-        <div class="certs-grid">
+        <div class="skills-grid">
 
-          <!-- Cert 1 -->
-          <div class="cert-card fade-in-scale">
-            <div class="cert-icon-wrap cert-aws">
-              <i data-lucide="cloud"></i>
+          <!-- Operating Systems -->
+          <div class="skill-category-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <i data-lucide="monitor"></i>
+              </div>
+              <h3>Operating Systems</h3>
             </div>
-            <div class="cert-body">
-              <div class="cert-status cert-status--progress">In Progress</div>
-              <h3 class="cert-title">AWS Certified Cloud Practitioner</h3>
-              <p class="cert-issuer">Amazon Web Services (AWS)</p>
-              <p class="cert-desc">Foundational AWS certification covering cloud concepts, core services, security, architecture, pricing, and support. Actively preparing for CLF-C02 exam.</p>
-              <div class="cert-footer">
-                <span class="cert-date"><i data-lucide="calendar"></i> Target: 2026</span>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <span class="skill-name">Windows 10</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="skill-name">Windows 11</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="skill-name">Windows Server</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+                <span class="skill-pct">80%</span>
               </div>
             </div>
           </div>
 
-          <!-- Cert 2 -->
-          <div class="cert-card fade-in-scale">
-            <div class="cert-icon-wrap cert-linux">
-              <i data-lucide="terminal"></i>
+          <!-- Desktop Support -->
+          <div class="skill-category-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <i data-lucide="wrench"></i>
+              </div>
+              <h3>Desktop Support</h3>
             </div>
-            <div class="cert-body">
-              <div class="cert-status cert-status--done">Completed</div>
-              <h3 class="cert-title">AWS Cloud Technical Essentials</h3>
-              <p class="cert-issuer">Amazon Web Services — Coursera</p>
-              <p class="cert-desc">Hands-on course covering EC2, S3, RDS, IAM, VPC, Lambda, and CloudWatch with real-world lab exercises on the AWS Management Console.</p>
-              <div class="cert-footer">
-                <span class="cert-date"><i data-lucide="calendar"></i> 2024</span>
-                <a href="#" class="cert-verify-link" target="_blank" rel="noopener"><i data-lucide="external-link"></i> Verify</a>
+            <div class="skill-tags">
+              <span class="stag">Windows Installation</span>
+              <span class="stag">Driver Installation</span>
+              <span class="stag">BIOS Configuration</span>
+              <span class="stag">Software Installation</span>
+              <span class="stag">Hardware Troubleshooting</span>
+              <span class="stag">Printer Support</span>
+              <span class="stag">Scanner Support</span>
+              <span class="stag">Data Backup &amp; Restore</span>
+            </div>
+          </div>
+
+          <!-- Active Directory -->
+          <div class="skill-category-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <i data-lucide="users"></i>
+              </div>
+              <h3>Active Directory</h3>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <span class="skill-name">ADUC / User Management</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="skill-name">Domain Join / Leave</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="skill-name">Group Policy Basics</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+                <span class="skill-pct">75%</span>
               </div>
             </div>
           </div>
 
-          <!-- Cert 3 -->
-          <div class="cert-card fade-in-scale">
-            <div class="cert-icon-wrap cert-linux">
-              <i data-lucide="monitor"></i>
+          <!-- Microsoft 365 -->
+          <div class="skill-category-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <i data-lucide="cloud"></i>
+              </div>
+              <h3>Microsoft 365</h3>
             </div>
-            <div class="cert-body">
-              <div class="cert-status cert-status--done">Completed</div>
-              <h3 class="cert-title">Linux for System Administrators</h3>
-              <p class="cert-issuer">Self-Learning &amp; Lab Practice</p>
-              <p class="cert-desc">Mastered Linux CLI, file permissions, user management, process control, SSH configuration, Apache server setup, and shell scripting on Amazon Linux &amp; Ubuntu.</p>
-              <div class="cert-footer">
-                <span class="cert-date"><i data-lucide="calendar"></i> 2023 – 2024</span>
+            <div class="skill-tags">
+              <span class="stag">Outlook</span>
+              <span class="stag">Exchange Online</span>
+              <span class="stag">OneDrive</span>
+              <span class="stag">Teams</span>
+              <span class="stag">Microsoft Office</span>
+              <span class="stag">User Management</span>
+              <span class="stag">License Management</span>
+            </div>
+          </div>
+
+          <!-- Networking -->
+          <div class="skill-category-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <i data-lucide="network"></i>
+              </div>
+              <h3>Networking</h3>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <span class="skill-name">TCP/IP, IPv4, DNS, DHCP</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="skill-name">LAN / WAN / Router / Switch</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="skill-name">Wi-Fi Troubleshooting / VPN</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+                <span class="skill-pct">80%</span>
               </div>
             </div>
           </div>
 
-          <!-- Cert 4 -->
-          <div class="cert-card fade-in-scale">
-            <div class="cert-icon-wrap cert-git">
-              <i data-lucide="git-branch"></i>
+          <!-- Remote Support -->
+          <div class="skill-category-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <i data-lucide="monitor-smartphone"></i>
+              </div>
+              <h3>Remote Support</h3>
             </div>
-            <div class="cert-body">
-              <div class="cert-status cert-status--done">Completed</div>
-              <h3 class="cert-title">Git &amp; GitHub — Version Control</h3>
-              <p class="cert-issuer">Self-Learning &amp; Project Practice</p>
-              <p class="cert-desc">Proficient in Git workflows — branching, merging, pull requests, resolving conflicts, and maintaining clean commit history for cloud infrastructure projects.</p>
-              <div class="cert-footer">
-                <span class="cert-date"><i data-lucide="calendar"></i> 2023</span>
+            <div class="skill-tags">
+              <span class="stag">Remote Desktop (RDP)</span>
+              <span class="stag">AnyDesk</span>
+              <span class="stag">TeamViewer</span>
+            </div>
+          </div>
+
+          <!-- CCTV -->
+          <div class="skill-category-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <i data-lucide="camera"></i>
+              </div>
+              <h3>CCTV / Surveillance</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="stag">NVR</span>
+              <span class="stag">DVR</span>
+              <span class="stag">IP Camera</span>
+              <span class="stag">CCTV Troubleshooting</span>
+            </div>
+          </div>
+
+          <!-- IT Asset Management -->
+          <div class="skill-category-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <i data-lucide="package"></i>
+              </div>
+              <h3>IT Asset Management</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="stag">Asset Inventory</span>
+              <span class="stag">Asset Documentation</span>
+              <span class="stag">Warranty Tracking</span>
+            </div>
+          </div>
+
+          <!-- Command Line -->
+          <div class="skill-category-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <i data-lucide="terminal"></i>
+              </div>
+              <h3>Command Line</h3>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <span class="skill-name">CMD</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar-item">
+                <span class="skill-name">PowerShell</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+                <span class="skill-pct">78%</span>
               </div>
             </div>
           </div>
@@ -544,172 +509,599 @@
       </div>
     </section>
 
-    <!-- Selected Works Section -->
-    <section id="projects" class="projects-section section-padding">
+    <!-- ===================== EXPERIENCE SECTION ===================== -->
+    <section id="experience" class="section-padding">
       <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag cursive">Selected Works</span>
-          <h2 class="section-title">Featured Projects</h2>
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Work Experience</span>
+          <h2 class="section-title">Professional <span class="grad-text">Journey</span></h2>
+          <p class="section-subtitle">Hands-on enterprise IT support experience</p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Experience 1 -->
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+            <div class="timeline-marker">
+              <div class="timeline-dot"><i data-lucide="briefcase"></i></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="exp-header">
+                <div class="exp-title-group">
+                  <h3 class="exp-role">Desktop Support Engineer</h3>
+                  <span class="exp-company">
+                    <i data-lucide="building-2"></i> Kalyani Cast Tech (KCT)
+                  </span>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-badge">Full Time</span>
+                  <span class="exp-period"><i data-lucide="calendar"></i> Manufacturing Industry</span>
+                </div>
+              </div>
+              <ul class="exp-list">
+                <li><i data-lucide="check-circle-2"></i> Installed and configured <strong>Windows operating systems</strong> (Windows 10 / 11)</li>
+                <li><i data-lucide="check-circle-2"></i> Performed <strong>Active Directory user management</strong> — Domain Join, Domain Leave, Password Reset</li>
+                <li><i data-lucide="check-circle-2"></i> Configured <strong>Outlook</strong> and provided Microsoft 365 user support</li>
+                <li><i data-lucide="check-circle-2"></i> <strong>Printer installation</strong> and network printer configuration</li>
+                <li><i data-lucide="check-circle-2"></i> Hardware troubleshooting, software deployment, preventive maintenance</li>
+                <li><i data-lucide="check-circle-2"></i> LAN / Wi-Fi troubleshooting and network configuration</li>
+                <li><i data-lucide="check-circle-2"></i> <strong>IT Asset Management</strong> — inventory, documentation, warranty tracking</li>
+                <li><i data-lucide="check-circle-2"></i> Remote desktop support and end-user technical assistance</li>
+              </ul>
+              <div class="exp-tech-tags">
+                <span>Windows AD</span><span>Microsoft 365</span><span>Outlook</span>
+                <span>Networking</span><span>Printer</span><span>Hardware</span><span>Remote Desktop</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+            <div class="timeline-marker">
+              <div class="timeline-dot"><i data-lucide="briefcase"></i></div>
+            </div>
+            <div class="timeline-card">
+              <div class="exp-header">
+                <div class="exp-title-group">
+                  <h3 class="exp-role">IT Support Engineer</h3>
+                  <span class="exp-company">
+                    <i data-lucide="building-2"></i> S. Mohanlal Cargo Containers (SMC)
+                  </span>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-badge">Full Time</span>
+                  <span class="exp-period"><i data-lucide="calendar"></i> Logistics Industry</span>
+                </div>
+              </div>
+              <ul class="exp-list">
+                <li><i data-lucide="check-circle-2"></i> Desktop troubleshooting and <strong>Windows installation</strong></li>
+                <li><i data-lucide="check-circle-2"></i> <strong>Outlook PST/OST troubleshooting</strong> and Microsoft Office support</li>
+                <li><i data-lucide="check-circle-2"></i> Network troubleshooting — <strong>DNS &amp; DHCP</strong> configuration</li>
+                <li><i data-lucide="check-circle-2"></i> Printer support and hardware diagnosis</li>
+                <li><i data-lucide="check-circle-2"></i> <strong>CCTV monitoring</strong> — NVR &amp; DVR configuration and maintenance</li>
+                <li><i data-lucide="check-circle-2"></i> IT inventory management and software installation</li>
+                <li><i data-lucide="check-circle-2"></i> Remote support and end-user technical assistance</li>
+              </ul>
+              <div class="exp-tech-tags">
+                <span>Outlook</span><span>DNS/DHCP</span><span>CCTV</span>
+                <span>NVR/DVR</span><span>Printer</span><span>IT Inventory</span><span>Remote Support</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS SECTION ===================== -->
+    <section id="projects" class="section-padding section-alt">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Lab Projects</span>
+          <h2 class="section-title">Hands-On <span class="grad-text">Projects</span></h2>
+          <p class="section-subtitle">Enterprise IT lab environments built for real-world skills</p>
         </div>
 
         <div class="projects-grid">
+
           <!-- Project 1 -->
-          <div class="project-card fade-in-scale" onclick="openProjectModal('threetier')">
-            <div class="project-img-container">
-              <img src="assets/architecture-diagram.png" alt="AWS Three-Tier Architecture Deployment Graphic">
-              <div class="project-overlay">
-                <span class="project-view-btn">View Details <i data-lucide="external-link"></i></span>
+          <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="project-card-header">
+              <div class="project-icon-wrap">
+                <i data-lucide="server"></i>
               </div>
+              <span class="project-number">01</span>
             </div>
-            <div class="project-details">
-              <h3 class="project-title">AWS Three-Tier Architecture Deployment</h3>
-              <p class="project-desc">
-                Designed and deployed a secure, production-ready three-tier architecture utilizing custom public/private subnets, application compute, and isolated RDS database layers.
-              </p>
-              <div class="project-tags">
-                <span>VPC</span>
-                <span>EC2</span>
-                <span>RDS</span>
-                <span>Linux</span>
-                <span>MySQL</span>
-              </div>
+            <h3 class="project-title">Enterprise Active Directory Home Lab</h3>
+            <p class="project-desc">
+              Configured Windows Server as a Domain Controller with Active Directory, DNS, and Domain Services in a virtualized lab environment.
+            </p>
+            <div class="project-tags">
+              <span>Domain Join</span>
+              <span>User Management</span>
+              <span>Password Reset</span>
+              <span>Group Policy</span>
+              <span>DNS</span>
+              <span>Windows Server</span>
+            </div>
+            <div class="project-footer">
+              <span class="proj-status online"><i data-lucide="circle-dot"></i> Completed</span>
             </div>
           </div>
 
           <!-- Project 2 -->
-          <div class="project-card fade-in-scale" onclick="openProjectModal('staticwebsite')">
-            <div class="project-img-container">
-              <img src="assets/website-mockup.png" alt="Static Website Hosting on AWS Mockup">
-              <div class="project-overlay">
-                <span class="project-view-btn">View Details <i data-lucide="external-link"></i></span>
+          <div class="project-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="project-card-header">
+              <div class="project-icon-wrap">
+                <i data-lucide="monitor"></i>
               </div>
+              <span class="project-number">02</span>
             </div>
-            <div class="project-details">
-              <h3 class="project-title">Static Website Hosting on AWS S3</h3>
-              <p class="project-desc">
-                Designed and deployed a static website on Amazon S3 using AWS Static Website Hosting. Configured secure access management and S3 Bucket Policies following security best practices.
-              </p>
-              <div class="project-tags">
-                <span>S3</span>
-                <span>IAM</span>
-                <span>Bucket Policy</span>
-                <span>Storage</span>
-              </div>
+            <h3 class="project-title">Enterprise Desktop Support Lab</h3>
+            <p class="project-desc">
+              Hands-on lab covering full desktop lifecycle — OS installation, driver management, printer configuration, and hardware diagnostics.
+            </p>
+            <div class="project-tags">
+              <span>Windows Installation</span>
+              <span>Driver Installation</span>
+              <span>Printer Config</span>
+              <span>Desktop Troubleshooting</span>
+              <span>Hardware Diagnostics</span>
+            </div>
+            <div class="project-footer">
+              <span class="proj-status online"><i data-lucide="circle-dot"></i> Completed</span>
             </div>
           </div>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="project-card-header">
+              <div class="project-icon-wrap">
+                <i data-lucide="network"></i>
+              </div>
+              <span class="project-number">03</span>
+            </div>
+            <h3 class="project-title">Networking Lab</h3>
+            <p class="project-desc">
+              Built a simulated enterprise network environment covering TCP/IP protocols, DNS, DHCP, routing, switching, and LAN/Wi-Fi configurations.
+            </p>
+            <div class="project-tags">
+              <span>TCP/IP</span>
+              <span>DNS</span>
+              <span>DHCP</span>
+              <span>Router</span>
+              <span>Switch</span>
+              <span>LAN</span>
+              <span>Wi-Fi</span>
+            </div>
+            <div class="project-footer">
+              <span class="proj-status online"><i data-lucide="circle-dot"></i> Completed</span>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="240">
+            <div class="project-card-header">
+              <div class="project-icon-wrap">
+                <i data-lucide="mail"></i>
+              </div>
+              <span class="project-number">04</span>
+            </div>
+            <h3 class="project-title">Microsoft Outlook Administration</h3>
+            <p class="project-desc">
+              Comprehensive lab for Outlook configuration, PST/OST management, profile creation, and mailbox troubleshooting in enterprise environments.
+            </p>
+            <div class="project-tags">
+              <span>Outlook Configuration</span>
+              <span>PST Creation</span>
+              <span>PST Restore</span>
+              <span>Outlook Profile</span>
+              <span>Mailbox Troubleshooting</span>
+            </div>
+            <div class="project-footer">
+              <span class="proj-status online"><i data-lucide="circle-dot"></i> Completed</span>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="320">
+            <div class="project-card-header">
+              <div class="project-icon-wrap">
+                <i data-lucide="camera"></i>
+              </div>
+              <span class="project-number">05</span>
+            </div>
+            <h3 class="project-title">NVR DVR CCTV Lab</h3>
+            <p class="project-desc">
+              Installed and configured IP cameras, NVR/DVR systems for CCTV surveillance, including camera placement, recording setup, and troubleshooting.
+            </p>
+            <div class="project-tags">
+              <span>Camera Installation</span>
+              <span>NVR Configuration</span>
+              <span>DVR Configuration</span>
+              <span>CCTV Troubleshooting</span>
+            </div>
+            <div class="project-footer">
+              <span class="proj-status online"><i data-lucide="circle-dot"></i> Completed</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section id="contact" class="contact-section section-padding">
+    <!-- ===================== CERTIFICATIONS SECTION ===================== -->
+    <section id="certifications" class="section-padding">
       <div class="container">
-        <div class="contact-grid">
-          <!-- Left Column: Scrabble Tiles styling -->
-          <div class="contact-branding fade-in-slide">
-            <div class="scrabble-board">
-              <div class="scrabble-row">
-                <div class="scrabble-tile">C<span class="scrabble-score">3</span></div>
-                <div class="scrabble-tile">O<span class="scrabble-score">1</span></div>
-                <div class="scrabble-tile">N<span class="scrabble-score">1</span></div>
-                <div class="scrabble-tile">T<span class="scrabble-score">1</span></div>
-                <div class="scrabble-tile">A<span class="scrabble-score">1</span></div>
-                <div class="scrabble-tile">C<span class="scrabble-score">3</span></div>
-                <div class="scrabble-tile">T<span class="scrabble-score">1</span></div>
-              </div>
-              <div class="scrabble-row offset">
-                <div class="scrabble-tile">U<span class="scrabble-score">1</span></div>
-                <div class="scrabble-tile">S<span class="scrabble-score">1</span></div>
-              </div>
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Certifications</span>
+          <h2 class="section-title">Professional <span class="grad-text">Certifications</span></h2>
+          <p class="section-subtitle">Industry-recognized credentials in IT infrastructure and support</p>
+        </div>
+
+        <div class="certs-grid">
+
+          <div class="cert-card" data-aos="zoom-in" data-aos-delay="0">
+            <div class="cert-icon-wrap">
+              <i data-lucide="monitor"></i>
             </div>
-            
-            <div class="contact-brief">
-              <p>Have a question or looking to build cloud infrastructure together?</p>
-              <p class="contact-email"><i data-lucide="mail"></i> <a href="mailto:sumitkumar10102004@gmail.com">sumitkumar10102004@gmail.com</a></p>
-              <p class="contact-phone"><i data-lucide="phone"></i> +91 7091313798</p>
-              <p class="contact-linkedin"><i data-lucide="linkedin"></i> <a href="https://www.linkedin.com/in/sumit7098/" target="_blank">linkedin.com/in/sumit7098</a></p>
+            <div class="cert-badge">
+              <i data-lucide="award"></i>
+            </div>
+            <h3>Windows Administration</h3>
+            <p>Microsoft Windows OS configuration, management, and support</p>
+            <div class="cert-ribbon">Certified</div>
+          </div>
+
+          <div class="cert-card" data-aos="zoom-in" data-aos-delay="80">
+            <div class="cert-icon-wrap">
+              <i data-lucide="network"></i>
+            </div>
+            <div class="cert-badge">
+              <i data-lucide="award"></i>
+            </div>
+            <h3>Networking Fundamentals</h3>
+            <p>TCP/IP, DNS, DHCP, LAN/WAN, routing and switching basics</p>
+            <div class="cert-ribbon">Certified</div>
+          </div>
+
+          <div class="cert-card" data-aos="zoom-in" data-aos-delay="160">
+            <div class="cert-icon-wrap">
+              <i data-lucide="cloud"></i>
+            </div>
+            <div class="cert-badge">
+              <i data-lucide="award"></i>
+            </div>
+            <h3>Microsoft 365 Fundamentals</h3>
+            <p>M365 services, Exchange Online, Teams, OneDrive, and user management</p>
+            <div class="cert-ribbon">Certified</div>
+          </div>
+
+          <div class="cert-card" data-aos="zoom-in" data-aos-delay="240">
+            <div class="cert-icon-wrap">
+              <i data-lucide="users"></i>
+            </div>
+            <div class="cert-badge">
+              <i data-lucide="award"></i>
+            </div>
+            <h3>Active Directory Administration</h3>
+            <p>ADUC, domain services, group policy, user and access management</p>
+            <div class="cert-ribbon">Certified</div>
+          </div>
+
+          <div class="cert-card" data-aos="zoom-in" data-aos-delay="320">
+            <div class="cert-icon-wrap">
+              <i data-lucide="wrench"></i>
+            </div>
+            <div class="cert-badge">
+              <i data-lucide="award"></i>
+            </div>
+            <h3>Desktop Support</h3>
+            <p>Hardware/software troubleshooting, OS deployment, end-user support</p>
+            <div class="cert-ribbon">Certified</div>
+          </div>
+
+          <div class="cert-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="cert-icon-wrap">
+              <i data-lucide="cloud-lightning"></i>
+            </div>
+            <div class="cert-badge">
+              <i data-lucide="award"></i>
+            </div>
+            <h3>AWS Cloud Fundamentals</h3>
+            <p>Amazon Web Services core concepts, cloud infrastructure basics</p>
+            <div class="cert-ribbon">Certified</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES SECTION ===================== -->
+    <section id="services" class="section-padding section-alt">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">What I Offer</span>
+          <h2 class="section-title">My <span class="grad-text">Services</span></h2>
+          <p class="section-subtitle">End-to-end IT support and infrastructure services</p>
+        </div>
+
+        <div class="services-grid">
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="service-icon"><i data-lucide="monitor-check"></i></div>
+            <h3>Desktop Support</h3>
+            <p>Full-cycle desktop support including hardware diagnostics, OS installation, driver management, and preventive maintenance.</p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="60">
+            <div class="service-icon"><i data-lucide="headset"></i></div>
+            <h3>IT Support</h3>
+            <p>Comprehensive end-user IT support with fast issue resolution, ticketing, and technical assistance for all IT needs.</p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="service-icon"><i data-lucide="users"></i></div>
+            <h3>Active Directory Management</h3>
+            <p>User account management, domain join/leave, password resets, group policy configuration, and ADUC administration.</p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="180">
+            <div class="service-icon"><i data-lucide="cloud"></i></div>
+            <h3>Microsoft 365 Support</h3>
+            <p>M365 user management, license assignment, Exchange Online, Teams, OneDrive, and Microsoft Office configuration.</p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="240">
+            <div class="service-icon"><i data-lucide="mail"></i></div>
+            <h3>Outlook Configuration</h3>
+            <p>Outlook profile setup, PST/OST management, mailbox troubleshooting, and email migration support.</p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-icon"><i data-lucide="printer"></i></div>
+            <h3>Printer Support</h3>
+            <p>Network printer installation, local printer configuration, driver installation, and printer troubleshooting.</p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="360">
+            <div class="service-icon"><i data-lucide="wifi"></i></div>
+            <h3>Network Troubleshooting</h3>
+            <p>LAN/WAN/Wi-Fi troubleshooting, DNS/DHCP configuration, router/switch configuration, and VPN support.</p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="420">
+            <div class="service-icon"><i data-lucide="hard-drive"></i></div>
+            <h3>Windows Installation</h3>
+            <p>Clean OS installation, system upgrades, driver deployment, BIOS configuration, and OS recovery.</p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="480">
+            <div class="service-icon"><i data-lucide="camera"></i></div>
+            <h3>CCTV Support</h3>
+            <p>IP camera installation, NVR/DVR setup and configuration, surveillance system maintenance and troubleshooting.</p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="540">
+            <div class="service-icon"><i data-lucide="screen-share"></i></div>
+            <h3>Remote Technical Support</h3>
+            <p>Remote desktop support via RDP, AnyDesk, and TeamViewer — fast resolution for remote teams and users.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TOOLS SECTION ===================== -->
+    <section id="tools" class="section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Technology Stack</span>
+          <h2 class="section-title">Tools &amp; <span class="grad-text">Technologies</span></h2>
+          <p class="section-subtitle">Enterprise tools I work with daily</p>
+        </div>
+
+        <div class="tools-grid">
+
+          <div class="tool-card" data-aos="zoom-in" data-aos-delay="0">
+            <div class="tool-icon">🪟</div>
+            <span class="tool-name">Windows</span>
+          </div>
+          <div class="tool-card" data-aos="zoom-in" data-aos-delay="60">
+            <div class="tool-icon">☁️</div>
+            <span class="tool-name">Microsoft 365</span>
+          </div>
+          <div class="tool-card" data-aos="zoom-in" data-aos-delay="120">
+            <div class="tool-icon">🏛️</div>
+            <span class="tool-name">Active Directory</span>
+          </div>
+          <div class="tool-card" data-aos="zoom-in" data-aos-delay="180">
+            <div class="tool-icon">📧</div>
+            <span class="tool-name">Outlook</span>
+          </div>
+          <div class="tool-card" data-aos="zoom-in" data-aos-delay="240">
+            <div class="tool-icon">⬛</div>
+            <span class="tool-name">CMD</span>
+          </div>
+          <div class="tool-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="tool-icon">💙</div>
+            <span class="tool-name">PowerShell</span>
+          </div>
+          <div class="tool-card" data-aos="zoom-in" data-aos-delay="360">
+            <div class="tool-icon">🖥️</div>
+            <span class="tool-name">AnyDesk</span>
+          </div>
+          <div class="tool-card" data-aos="zoom-in" data-aos-delay="420">
+            <div class="tool-icon">🔗</div>
+            <span class="tool-name">TeamViewer</span>
+          </div>
+          <div class="tool-card" data-aos="zoom-in" data-aos-delay="480">
+            <div class="tool-icon">🔷</div>
+            <span class="tool-name">VMware</span>
+          </div>
+          <div class="tool-card" data-aos="zoom-in" data-aos-delay="540">
+            <div class="tool-icon">📦</div>
+            <span class="tool-name">VirtualBox</span>
+          </div>
+          <div class="tool-card" data-aos="zoom-in" data-aos-delay="600">
+            <div class="tool-icon">🌐</div>
+            <span class="tool-name">Cisco Packet Tracer</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section id="contact" class="section-padding section-alt">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's <span class="grad-text">Connect</span></h2>
+          <p class="section-subtitle">Looking for an IT Support Engineer? Let's talk!</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Info -->
+          <div class="contact-info-col" data-aos="fade-right" data-aos-delay="100">
+            <h3 class="contact-info-title">Contact Information</h3>
+            <p class="contact-info-desc">
+              Available for full-time IT Support roles, Desktop Support Engineer positions, and IT Infrastructure opportunities
+              at companies like Microsoft, TCS, Wipro, Infosys, Accenture, Capgemini, HCL, Cognizant, and manufacturing companies.
+            </p>
+
+            <div class="contact-cards">
+              <a href="mailto:sumitkumar10102004@gmail.com" class="contact-card" id="contact-email">
+                <div class="contact-card-icon"><i data-lucide="mail"></i></div>
+                <div>
+                  <span class="contact-card-label">Email</span>
+                  <span class="contact-card-value">sumitkumar10102004@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/sumit7098/" target="_blank" rel="noopener" class="contact-card" id="contact-linkedin">
+                <div class="contact-card-icon"><i data-lucide="linkedin"></i></div>
+                <div>
+                  <span class="contact-card-label">LinkedIn</span>
+                  <span class="contact-card-value">linkedin.com/in/sumit7098</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/Sumitkumar7098" target="_blank" rel="noopener" class="contact-card" id="contact-github">
+                <div class="contact-card-icon"><i data-lucide="github"></i></div>
+                <div>
+                  <span class="contact-card-label">GitHub</span>
+                  <span class="contact-card-value">github.com/Sumitkumar7098</span>
+                </div>
+              </a>
+
+              <a href="tel:+91" class="contact-card" id="contact-phone">
+                <div class="contact-card-icon"><i data-lucide="phone"></i></div>
+                <div>
+                  <span class="contact-card-label">Phone</span>
+                  <span class="contact-card-value">Available on request</span>
+                </div>
+              </a>
             </div>
           </div>
 
-          <!-- Right Column: Interactive Form -->
-          <div class="contact-form-wrapper fade-in-slide">
-            <!-- ⚠️ Replace YOUR_FORM_ID with your Formspree endpoint ID from formspree.io -->
-            <form id="contact-form" class="glass-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-              <div class="form-group">
-                <input type="text" id="name" name="name" required placeholder=" ">
-                <label for="name">Name</label>
+          <!-- Contact Form -->
+          <div class="contact-form-col" data-aos="fade-left" data-aos-delay="200">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Full Name</label>
+                  <input type="text" id="contact-name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email-input">Email Address</label>
+                  <input type="email" id="contact-email-input" name="email" placeholder="your@email.com" required>
+                </div>
               </div>
               <div class="form-group">
-                <input type="email" id="email" name="email" required placeholder=" ">
-                <label for="email">Email</label>
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="Job Opportunity / IT Support Inquiry" required>
               </div>
               <div class="form-group">
-                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
-                <label for="message">Message</label>
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about the role or how I can help..." required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-submit">
-                <span>Send Message</span>
+              <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn">
                 <i data-lucide="send"></i>
+                <span>Send Message</span>
               </button>
+              <div class="form-status" id="form-status"></div>
             </form>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Call to Action Banner -->
-    <section class="cta-banner section-padding">
-      <div class="container">
-        <div class="cta-wrapper glassmorphism fade-in-scale">
-          <h2 class="cta-title">Let's Make It Happen</h2>
-          <p class="cta-desc">Always open to new opportunities, collaboration, and learning projects. Let's build together to deploy your system to the cloud!</p>
-          <a href="mailto:sumitkumar10102004@gmail.com" class="btn btn-dark">Get in Touch</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
+  <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-logo">Sumit<span>.</span></div>
-      <div class="footer-social-links">
-        <a href="https://www.linkedin.com/in/sumit7098/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social-link">
-          <i data-lucide="linkedin"></i>
-        </a>
-        <a href="https://github.com/Sumitkumar7098" target="_blank" rel="noopener" aria-label="GitHub" class="footer-social-link">
-          <i data-lucide="github"></i>
-        </a>
-        <a href="mailto:sumitkumar10102004@gmail.com" aria-label="Email" class="footer-social-link">
-          <i data-lucide="mail"></i>
-        </a>
-        <a href="assets/resume.pdf" download="Sumit_Kumar_Resume.pdf" aria-label="Download Resume" class="footer-social-link">
-          <i data-lucide="file-down"></i>
-        </a>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">Sumit<span class="logo-dot">.</span></a>
+          <p class="footer-tagline">Desktop Support Engineer | IT Support | Active Directory | Microsoft 365 | Networking</p>
+          <div class="footer-socials">
+            <a href="mailto:sumitkumar10102004@gmail.com" aria-label="Email" class="footer-social-link">
+              <i data-lucide="mail"></i>
+            </a>
+            <a href="https://linkedin.com/in/sumit7098" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social-link">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://github.com/Sumitkumar7098" target="_blank" rel="noopener" aria-label="GitHub" class="footer-social-link">
+              <i data-lucide="github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>More</h4>
+          <ul>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="assets/resume.pdf" download>Resume</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-cta-group">
+          <h4>Open To Work</h4>
+          <p>Looking for IT Support Engineer / Desktop Support Engineer roles at top companies.</p>
+          <a href="#contact" class="btn btn-primary footer-cta">Hire Me</a>
+        </div>
       </div>
-      <div class="footer-copyright">
-        &copy; <span id="current-year">2026</span> Sumit Kumar. All rights reserved.
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Sumit Kumar. All rights reserved.</p>
+        <p>IT Support Engineer | Desktop Support | Active Directory | Microsoft 365</p>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll To Top Button -->
-  <button id="scroll-to-top" aria-label="Scroll to top" title="Scroll to top">
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top">
     <i data-lucide="arrow-up"></i>
   </button>
-
-  <!-- Project Details Modals -->
-  <div id="project-modal" class="modal-overlay">
-    <div class="modal-content glassmorphism">
-      <button class="modal-close" onclick="closeProjectModal()">&times;</button>
-      
-      <!-- Modal Content Placeholder -->
-      <div id="modal-project-details">
-        <!-- Will be loaded dynamically via JS -->
-      </div>
-    </div>
-  </div>
 
   <!-- Scripts -->
   <script src="script.js"></script>
